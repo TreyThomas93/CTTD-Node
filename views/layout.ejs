@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123410747-5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-123410747-5');
+    </script>
+
+    <meta name="description" content="Courage through the Darkness is a non-fictional book written by Cynthia Thomas.">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href=<%= style %> />
+    <title><%= title %></title>
+  </head>
+  <body>
+    <%- body %>
+    <!-- SCRIPTS -->
+    <script
+      src="https://kit.fontawesome.com/822c2b0397.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <script src=<%= js %> ></script>
+  </body>
+</html>
