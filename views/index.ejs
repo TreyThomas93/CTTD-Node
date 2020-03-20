@@ -1,0 +1,218 @@
+<main>
+  <!-- desktop -->
+  <div class="nav-desktop">
+    <ul>
+      <li><a href="#" data-desktopid="landing">Home</a></li>
+      <li>
+        <a href="#" data-desktopid="about-the-book">About The Book</a>
+      </li>
+      <li>
+        <a href="#" data-desktopid="about-the-author">About The Author</a>
+      </li>
+      <!-- <li><a href="#" data-desktopid="authors-blog">Blog</a></li> -->
+      <li><a href="#" data-desktopid="buy-now">Buy Now</a></li>
+      <li><a href="#" data-desktopid="contact-the-author">Contact</a></li>
+    </ul>
+
+    <div id="social-media">
+      <a
+        href="https://m.facebook.com/CourageDarkness/"
+        target="_blank"
+        id="facebook"
+        title="Facebook"
+        ><i class="fab fa-facebook"></i
+      ></a>
+      <a
+        href="https://twitter.com/CourageDarkness"
+        target="_blank"
+        id="twitter"
+        title="Twitter"
+        ><i class="fab fa-twitter"></i
+      ></a>
+    </div>
+  </div>
+  <!-- LANDING -->
+  <div id="landing" class="box-shadow">
+    <!-- BACKGROUND VIDEO -->
+    <video autoplay loop muted id="vid">
+      <source src="/images/storm_clouds.mp4" type="video/mp4" />
+    </video>
+
+    <div id="social-media-mobile">
+      <a
+        href="https://m.facebook.com/CourageDarkness/"
+        target="_blank"
+        id="facebook"
+        title="Facebook"
+        ><i class="fab fa-facebook"></i
+      ></a>
+      <a
+        href="https://twitter.com/CourageDarkness"
+        target="_blank"
+        id="twitter"
+        title="Twitter"
+        ><i class="fab fa-twitter"></i
+      ></a>
+    </div>
+
+    <!-- MENU BUTTON -->
+    <button id="menu-btn">
+      <div class="menu-btn-bar"></div>
+      <div class="menu-btn-bar"></div>
+      <div class="menu-btn-bar"></div>
+    </button>
+
+    <!-- NAV BAR -->
+    <!-- mobile -->
+    <div class="nav-mobile">
+      <div id="exit-nav">
+        <a href="#"><i class="fas fa-times"></i></a>
+      </div>
+      <div class="nav-group">
+        <ul>
+          <li><a href="#" data-mobileid="landing">Home</a></li>
+          <li>
+            <a href="#" data-mobileid="about-the-book">About The Book</a>
+          </li>
+          <li>
+            <a href="#" data-mobileid="about-the-author">About The Author</a>
+          </li>
+          <!-- <li><a href="#" data-mobileid="authors-blog">Blog</a></li> -->
+          <li><a href="#" data-mobileid="buy-now">Buy Now</a></li>
+          <li>
+            <a href="#" data-mobileid="contact-the-author">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="inner-landing">
+      <div id="saying">
+        <p>
+          <i class="fas fa-quote-left"></i>you must have the courage to pass
+          through the darkness and seek the light on the other side.<i
+            class="fas fa-quote-right"
+          ></i>
+        </p>
+      </div>
+
+      <img id="book" src="/images/CTTD_Cover.jpg" class="box-shadow" alt="" />
+
+      <button id="get-your-copy-now-btn" class="box-shadow">
+        Get Your Copy Now!
+      </button>
+    </div>
+  </div>
+
+  <!-- ABOUT THE BOOK -->
+  <div id="about-the-book" class="">
+    <div class="container">
+      <h2>The Journey</h2>
+      <div>
+        <p>
+          From the beginning, Cynthia Thomas's life was unstable. All children
+          want to feel safe and loved by their parents. However, Cynthia was not
+          born into a loving environment. Instead, she endured fear and broken
+          trust that allowed negative strongholds to form, and she carried them
+          into adulthood.
+        </p>
+        <p>
+          In Courage through the Darkness, Cynthia shares her inspiring story of
+          moving beyond her traumatic childhood to healing and restoration.
+          Through her journey, she is forced to face her fears and make
+          difficult decisions while searching for peace, comfort, and freedom.
+        </p>
+        <p>
+          Along the way, she hears a still small voice speaking to her heart,
+          providing the hope she so desperately needs. With Jesus at her side
+          and guiding the way, Cynthia demonstrates that triumph can come from
+          tragedy, but you must have the courage to pass through the darkness
+          and seek the light on the other side.
+        </p>
+      </div>
+      <img src="/images/cross.png" alt="" id="cross" />
+    </div>
+  </div>
+
+  <!-- ABOUT THE AUTHOR -->
+  <div id="about-the-author" class="box-shadow">
+    <div class="container">
+      <h2>About The Author</h2>
+      <div>
+        <p>
+          <b>Cynthia Thomas</b> has been a nurse for twenty-eight years with
+          seven of those years as a family nurse practitioner. She believes she
+          is called to serve others, both with their physical and emotional
+          needs. In addition, she enjoys reading and spending time with her
+          family. Cynthia and her husband have two grown sons and live in
+          Oklahoma.
+        </p>
+        <div class="author-photo box-shadow" id="couple"></div>
+      </div>
+      <div class="author-photo box-shadow" id="family"></div>
+    </div>
+  </div>
+
+  <!-- BUY NOW -->
+  <div id="buy-now" class="">
+    <div class="container">
+      <h2>Get The Book Now!</h2>
+      <div id="cover-and-links">
+        <div id="book-cover" class="box-shadow"></div>
+        <div class="links">
+          <div id="westbow" class="box-shadow"></div>
+          <div id="amazon" class="box-shadow"></div>
+          <div id="barnes-and-noble" class="box-shadow"></div>
+          <!-- <div id="ebooks" class="box-shadow"></div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT THE AUTHOR -->
+  <div id="contact-the-author">
+    <div class="container">
+      <h2>Contact The Author</h2>
+      <%- include('partials/messages') %>
+      <form action="/contact" method="POST">
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          value="<%= typeof name != 'undefined' ? name : '' %>"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          value="<%= typeof email != 'undefined' ? email : '' %>"
+        />
+        <textarea
+          name="message"
+          placeholder="Message"
+          value="<%= typeof message != 'undefined' ? message : '' %>"
+        ></textarea>
+        <input type="submit" value="Send" class="shadow" />
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="box-shadow">
+    <label
+      ><a
+        href="https://www.privacypolicies.com/privacy/view/d646688323f9346d91e7b855020ba9b6"
+        target="_blank"
+        >Privacy Policy</a
+      ></label
+    >
+    <label
+      ><a
+        href="https://www.termsfeed.com/terms-conditions/5f658c9028b31b57dc21003cfa8d11ea"
+        target="_blank"
+        >Terms Of Conditions</a
+      ></label
+    >
+    <label>Website By: <a href="#">Meso Web Development</a></label>
+  </footer>
+</main>

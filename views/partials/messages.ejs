@@ -1,0 +1,9 @@
+<% if(error_msg != "") { %>
+<div id="message-container" class="error box-shadow">
+  <label for=""><%= error_msg %></label>
+</div>
+<% } %> <% if(success_msg != "") { %>
+<div id="message-container" class="success box-shadow">
+  <label for=""><%= success_msg %></label>
+</div>
+<% } %>
