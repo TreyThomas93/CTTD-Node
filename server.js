@@ -9,7 +9,7 @@ const app = express();
 app.use(expressLayouts);
 app.set("view engine", "ejs");
 
-app.use(express.static(__dirname + "/public"));
+app.use(express.static("http://s3.amazonaws.com/cttd/public"));
 
 // Bodyparser
 app.use(express.urlencoded({ extended: false }));
