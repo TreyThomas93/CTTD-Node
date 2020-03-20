@@ -3,7 +3,10 @@ const expressLayouts = require("express-ejs-layouts");
 const flash = require("connect-flash");
 const session = require("express-session");
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 241efd244ce0f01c555405710aea9e6ea6daa6eb
 const app = express();
 
 // EJS Middleware
