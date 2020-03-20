@@ -1,0 +1,556 @@
+body main {
+  max-width: 1280px;
+  margin: auto;
+}
+
+body main .nav-desktop {
+  display: none;
+}
+
+body main #landing {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+body main #landing video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -5;
+  position: absolute;
+}
+
+body main #landing #menu-btn {
+  padding: 1em 2em;
+  position: absolute;
+  right: 0;
+}
+
+body main #landing #menu-btn > div {
+  background: white;
+  height: 2px;
+  margin-top: 0.5em;
+  opacity: 0.75;
+}
+
+body main #landing #menu-btn > div:nth-child(1) {
+  width: 20px;
+}
+
+body main #landing #menu-btn > div:nth-child(2) {
+  width: 30px;
+}
+
+body main #landing #menu-btn > div:nth-child(3) {
+  width: 30px;
+}
+
+body main #landing .nav-mobile {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 20;
+  left: 100%;
+}
+
+body main #landing .nav-mobile #exit-nav {
+  padding: 0.5em 1em;
+  text-align: right;
+  font-size: 1.5rem;
+}
+
+body main #landing .nav-mobile #exit-nav a {
+  color: black;
+}
+
+body main #landing .nav-mobile ul {
+  width: 100%;
+  list-style: none;
+}
+
+body main #landing .nav-mobile ul li {
+  padding: 1em;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+
+body main #landing .nav-mobile ul li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: black;
+}
+
+body main #landing .nav-mobile ul li:hover {
+  padding-left: 3em;
+}
+
+body main #landing #social-media-mobile {
+  width: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1em;
+  position: absolute;
+}
+
+body main #landing #social-media-mobile a {
+  font-size: 1.5rem;
+  color: white;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  opacity: 0.75;
+}
+
+body main #landing #social-media-mobile a:hover {
+  -webkit-transform: scale(1.01) translateY(5px);
+          transform: scale(1.01) translateY(5px);
+}
+
+body main #landing .inner-landing {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 20%;
+  max-width: 600px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body main #landing .inner-landing #saying {
+  padding: 1em;
+  position: absolute;
+  top: 35%;
+}
+
+body main #landing .inner-landing #saying p,
+body main #landing .inner-landing #saying i {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+body main #landing .inner-landing #get-your-copy-now-btn {
+  background: var(--secondary);
+  padding: 1em;
+  font-size: 1.3rem;
+  font-weight: 500;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  color: white;
+  z-index: 20;
+  border: solid 2px var(--primary) !important;
+  width: 250px;
+  margin: 1em auto;
+}
+
+body main #landing .inner-landing #get-your-copy-now-btn:hover {
+  opacity: 0.5;
+  -webkit-transform: translateY(5px) scale(1.01);
+          transform: translateY(5px) scale(1.01);
+}
+
+body main #landing .inner-landing #book {
+  height: 375px;
+  margin: auto;
+}
+
+body main #about-the-book {
+  position: relative;
+  padding: 5em 0;
+}
+
+body main #about-the-book img {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  opacity: 0;
+}
+
+body main #about-the-author {
+  background: var(--primary);
+  color: black;
+  padding: 5em 0;
+}
+
+body main #about-the-author h2 {
+  border-bottom: solid 2px var(--secondary);
+}
+
+body main #about-the-author .author-photo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+  margin-top: 1em;
+}
+
+body main #about-the-author #couple {
+  background-image: url("/images/couple.jpg");
+  background-position: 50% 25%;
+}
+
+body main #about-the-author #family {
+  background-image: url("/images/family.jpg");
+}
+
+body main #buy-now {
+  padding: 5em 0;
+}
+
+body main #buy-now #cover-and-links {
+  padding: 1em;
+}
+
+body main #buy-now #cover-and-links #book-cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/images/cover.jpg");
+  width: 200px;
+  height: 300px;
+  margin: auto;
+  opacity: 0;
+}
+
+body main #buy-now #cover-and-links .links {
+  opacity: 0;
+}
+
+body main #buy-now #cover-and-links .links > div {
+  width: 100%;
+  height: 75px;
+  margin-top: 2em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+body main #buy-now #cover-and-links .links > div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body main #buy-now #cover-and-links .links #westbow {
+  background-image: url("/images/WBP.png");
+}
+
+body main #buy-now #cover-and-links .links #amazon {
+  background-image: url("/images/amazon.jpg");
+}
+
+body main #buy-now #cover-and-links .links #barnes-and-noble {
+  background-image: url("/images/barnes.png");
+}
+
+body main #buy-now #cover-and-links .links #ebooks {
+  background-image: url("/images/ebooks.jpg");
+}
+
+body main #authors-blog {
+  padding: 5em 0;
+  background: var(--primary);
+}
+
+body main #authors-blog h2 {
+  color: white;
+  border-bottom: solid 2px white;
+}
+
+body main #authors-blog #blogs > div {
+  width: 100%;
+  max-width: 600px;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1em auto 0 auto;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+
+body main #authors-blog #blogs > div > label {
+  font-size: 2.5rem;
+}
+
+body main #authors-blog #blogs > div:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+body main #authors-blog #blogs #spiritual-blog {
+  background-image: url("/images/bible.jpg");
+}
+
+body main #authors-blog #blogs #health-blog {
+  background-image: url("/images/health.jpg");
+}
+
+body main #contact-the-author {
+  padding: 5em 0;
+}
+
+body main #contact-the-author form {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2em;
+  max-width: 680px;
+  margin: 2em auto;
+}
+
+body main #contact-the-author form input {
+  border: none;
+  border-bottom: solid 1px black;
+  padding: 0.5em 0.5em;
+}
+
+body main #contact-the-author form textarea {
+  border-radius: 5px;
+  min-height: 100px;
+  max-height: 150px;
+  overflow-y: auto;
+  padding: 0.5em;
+}
+
+body main #contact-the-author form input[type="submit"] {
+  width: 125px;
+  margin: auto;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: none;
+  background: var(--secondary);
+  color: white;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+
+body main #contact-the-author form input[type="submit"]:hover {
+  opacity: 0.5;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+body main footer {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2em;
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 3em 0;
+  color: white;
+  background: var(--primary);
+}
+
+body main footer a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (min-width: 400px) {
+  #buy-now .links > div {
+    max-width: 400px !important;
+    margin: auto;
+  }
+}
+
+@media (min-width: 500px) {
+  footer {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
+}
+
+@media (min-width: 680px) {
+  #about-the-author > .container > div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+  }
+  #about-the-author > .container #family {
+    background-position: 50% 5% !important;
+  }
+}
+
+@media (min-width: 860px) {
+  .nav-mobile,
+  #social-media-mobile {
+    display: none !important;
+  }
+  #menu-btn {
+    display: none;
+  }
+  .nav-desktop {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    width: 100%;
+    padding: 1em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav-desktop ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style: none;
+    width: 700px;
+    margin-top: 5px;
+  }
+  .nav-desktop ul li {
+    -webkit-transition: ease 0.4s;
+    transition: ease 0.4s;
+  }
+  .nav-desktop ul li a {
+    color: var(--secondary);
+    text-decoration: none;
+  }
+  .nav-desktop ul li:hover {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  .nav-desktop > div {
+    width: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav-desktop > div a {
+    font-size: 1.5rem;
+    color: var(--secondary);
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+  }
+  .nav-desktop > div a:hover {
+    -webkit-transform: scale(1.01) translateY(5px);
+            transform: scale(1.01) translateY(5px);
+  }
+  #buy-now {
+    position: relative;
+  }
+  #buy-now #cover-and-links #book-cover {
+    margin: 0 !important;
+    margin-left: 150px !important;
+    width: 250px !important;
+    height: 350px !important;
+  }
+  #buy-now #cover-and-links .links {
+    margin-top: -300px;
+    margin-left: 325px;
+  }
+  #buy-now #cover-and-links .links > div {
+    z-index: 20;
+  }
+  .inner-landing {
+    max-width: 100% !important;
+    display: block !important;
+    position: absolute;
+    top: 0% !important;
+    left: 0% !important;
+    -webkit-transform: translateX(0%) !important;
+            transform: translateX(0%) !important;
+    height: 100% !important;
+  }
+  .inner-landing #saying {
+    width: 300px !important;
+    position: absolute !important;
+    left: 25% !important;
+    top: 15% !important;
+    z-index: 20 !important;
+  }
+  .inner-landing #saying p,
+  .inner-landing #saying i {
+    color: white;
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+  .inner-landing #get-your-copy-now-btn {
+    background: var(--secondary);
+    padding: 1em;
+    font-size: 1.3rem;
+    position: absolute !important;
+    bottom: 35% !important;
+    left: 40% !important;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    color: white;
+    z-index: 20;
+    border: solid 2px var(--primary) !important;
+  }
+  .inner-landing #get-your-copy-now-btn:hover {
+    opacity: 0.5;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  .inner-landing img {
+    height: 400px !important;
+    position: absolute !important;
+    left: 50% !important;
+    top: 10% !important;
+  }
+}
+
+@media (min-width: 960px) {
+  #landing {
+    height: 500px !important;
+  }
+  #about-the-book img {
+    right: 10% !important;
+  }
+  .inner-landing #get-your-copy-now-btn {
+    bottom: 15% !important;
+  }
+}
+
+@media (min-width: 1080px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */
